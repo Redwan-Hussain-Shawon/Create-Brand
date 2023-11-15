@@ -1,0 +1,242 @@
+ /* ^Medium Device Media Query Start */
+ @media(max-width:1150px){
+
+
+     /* === Nab Bar Responsive Start === */
+     .menu-icon {
+        display: flex;
+    }
+
+   nav ul.main_menu {
+        width: 100%;
+        min-height:90vh;
+        overflow: auto;
+        background-color: #eceff5;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        justify-content: start !important;
+        right: 2000px;
+        gap: 10px !important;
+        padding: 10px;
+        transition: 0.6s;
+    }
+
+    ul.main_menu.active {
+        right: 0;
+    }
+
+    ul.main_menu li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 6px;
+        padding-bottom: 0;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    ul.main_menu li a {
+        padding: 13px 20px !important;
+    }
+
+    ul.main_menu li a:hover {
+        background-color: transparent !important;
+    }
+
+    .drop_menu {
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    .drop-down {
+        position: static;
+        scale: 1;
+        opacity: 1;
+        width: 80%;
+        border: none;
+        border-radius: 0;
+        border-top: 4px solid #fa4f4c;
+    }
+
+    .drop_menu {
+        display: none;
+    }
+
+    .drop_menu.active {
+        display: flex;
+    }
+
+    /* === Nab Bar Responsive End === */
+
+
+    #blog .row .content a.blog_link{
+        height:fit-content ;
+    }
+    #blog .row .content a.blog_link{
+        height: auto;
+    }
+    #blog .row .content .card{
+        /* flex-direction: column; */
+        height: fit-content;
+        /* padding-bottom: 20px; */
+    }
+    #blog .row .content img{
+        width: 100%;
+    }
+
+    #blog .row .content .blog_text{
+        padding-bottom: 10px;
+    }
+    #blog .row .content .blog_text h2{
+        font-size: 15px;
+    }
+    #blog .row .content .blog_text p{
+        font-size: 13px;
+    }
+ }
+ @media(max-width:1170px) {
+    #faqs .accordions{
+        align-items: center;
+        flex-direction: column;
+    }
+    #faqs .accordions img.main-img{
+        max-width: 700px;
+    }
+
+}
+
+ @media(max-width:850px) {
+
+
+
+     /* === Contact  Section Responsive Start === */
+     #contact .row {
+         flex-direction: column;
+         align-items: center;
+     }
+     #contact .row .contact_details{
+        /* align-items: center; */
+     }
+    
+
+     #contact form {
+         margin: 0 auto 30px;
+     }
+     /* === Contact  Section Responsive End === */
+
+
+     #blog .row{
+        flex-direction: column;
+
+    }
+
+    #about .container .row{
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    #about .container .row .text{
+        width: 100%;
+    }
+
+ }
+
+ /* ^Medium Device Media Query End */
+
+
+ @media(max-width:588px) {
+
+    h1{
+        font-size: 36px !important;
+        margin-bottom: 60px !important;
+    }
+
+
+    #blog .row .content{
+        align-items: center;
+    }
+    #blog .row .content img{
+        max-width: 400px;
+    }
+    #blog .row .content a.blog_link{
+        max-width: 400px;
+    }
+    #blog .row .content .card{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+ 
+ /* ^Extra Small Device Media Query Start */
+
+ @media(max-width:458px) {
+    h2{
+        font-size: 30px !important;
+    }
+     /* === Top Bar Responsive Start === */
+
+     .top-bar{
+        display:none;
+    }
+    header.active_nav {
+        position: sticky;
+        top: 0px;
+    }
+
+     .top-bar h3 {
+         font-size: 14px;
+         font-weight: 500;
+         color: #fff;
+     }
+
+     .top-bar .first-h3 {
+         margin-right: 20px;
+     }
+
+     /* === Top Bar Responsive End === */
+
+     /* === Contact  Section Responsive Start === */
+
+     #contact form .form-group-setion{
+      
+       flex-direction: column;
+    }
+    
+     /* === Contact  Section Responsive Start === */
+     #faqs .accordion_card h3{
+       font-size: 17px;
+    }
+ }
+
+ /* ^Extra Small Device Media Query End */
+
+ @media(max-width:430px) {
+    #our-team .header-menu ul li{
+        min-width: 220px;
+    }
+ }
+
+
+ /* ^Extra Extra Small Device Media Query Start */
+
+ @media (max-width:330px) {
+     /* === Top Bar Responsive Start === */
+
+    
+     #blog .row .sidebar .social_link{
+        max-width: 300px !important;
+     }
+     #blog .social_link .card{
+        flex-direction: column;
+        align-items: start !important;
+     }
+     #blog .row .sidebar .social_link .card .card-body{
+        width: 100%;
+     }
+
+     /* === Top Bar Responsive Start === */
+ }
+
+ /* ^Extra Extra Small Device Media Query End */

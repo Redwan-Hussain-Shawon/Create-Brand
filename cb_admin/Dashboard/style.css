@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --secondary: #0099ff;
+    --primary: #fd3434;
+    --bg: #f4f7fd;
+    --bg2: rgb(249, 248, 248);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin:0px auto;
+    position: fixed;
+
+}
+.container{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+/* ============== top bar ============ */
+.top-bar{
+    width: 100%;
+    height: 35px;
+    border-bottom: 3px double purple;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input input {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.input input ::placeholder{
+    font-size: 13px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+    justify-content: space-between;
+}
+/* alll img  */
+img{
+    width: 30px;
+    border-radius: 5px;
+}
+.dashboard{
+    margin-top: 4px;
+    display: flex;
+    gap: 10px;
+    max-height: 100vh;
+}
+
+/* ======== search box ========== */
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 5px 0px;
+ 
+}
+.search-box input{
+    outline: none;
+    border: none;
+    padding: 0px 5px;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+}
+.search-box ::placeholder{
+    color: white;
+}
+/* ------------------- left aside ================= */
+.left-aside{
+    margin-top: 10px;
+    background: var(--primary);
+    flex-basis: 25%;
+    min-height:100vh;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.menu-btn{
+    cursor: pointer;
+    display: none;
+}
+.aside-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.aside-menu{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aside-menu h6{
+    font-size: 15px;
+    color: var(--bg);
+}
+.down-arrow{
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
+.drop:hover .down-arrow{
+    transition: all 0.2s;
+    transform: rotate(0deg);
+}
+.all{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 0 1rem;
+}
+.all h5{
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--bg2);
+}
+.drop li{
+    list-style-type: none;
+}
+.drop li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown ul{
+    margin-top: 5px;
+    text-align: center;
+    background: rgb(180, 230, 250);
+    transition: all 0.3s;
+    display: none;
+}
+.drop:hover .dropdown ul{
+    display: block;
+}
+
+.dropdown li{
+    list-style-type: none;
+    padding: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+.dropdown li:hover{
+    background: peru;
+    
+}
+.dropdown li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown li a:hover{
+    color: var(--bg);
+}
+
+
+/* ============================= right side ================= */
+.right-side{
+    flex-basis: 75%;
+    margin-top: 1rem;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+.right-div{
+    background:#0099ff;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.right-div h1{
+    font-size: 56px;
+    padding: 1rem;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #53abe6;
+    padding: 10px 0px;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.right-arrow{
+    width: 20px;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+.red{
+    background-color: red;
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 880px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-aside{
+        height: auto;
+        position: absolute;
+        overflow: scroll;
+        transition: all 0.4s;
+    }
+    .left-bar{
+        transform: translateX(-130%);
+    }
+    .right-side{
+        width: 100%;
+        height: 100%;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
